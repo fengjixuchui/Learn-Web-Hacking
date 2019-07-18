@@ -1,4 +1,4 @@
-防御
+防御技术
 ========================================
 
 .. toctree::
@@ -6,9 +6,11 @@
    :caption: Contents:
 
    mitigation
+   team
+   threat
+   riskcontrol
    reinforce
+   honeypot
    intrusiondetection
    emergency
    forensic
-   threat
-   honeypot

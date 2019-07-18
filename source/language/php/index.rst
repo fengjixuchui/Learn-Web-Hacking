@@ -1,4 +1,4 @@
-PHP相关漏洞
+PHP
 ================================
 
 .. toctree::
@@ -7,6 +7,8 @@ PHP相关漏洞
 
    backdoor
    unserialize
+   disablefunc
+   basedir
    phpinfo
    htaccess
    webshell

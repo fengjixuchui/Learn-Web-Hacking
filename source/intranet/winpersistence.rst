@@ -1,4 +1,4 @@
-Windows持久化
+持久化 - Windows
 ========================================
 
 隐藏文件
@@ -77,8 +77,10 @@ sethc
 - vssown.vbs + libesedb + NtdsXtract
 - ntdsdump
 - 利用powershell(DSInternals)分析hash
+- 使用 ``net use \\%computername% /u:%username%`` 重置密码尝试次数
 
 其他
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - 组策略首选项漏洞
 - DLL劫持
+- 替换系统工具，实现后门

@@ -29,7 +29,18 @@ Git信息泄漏
 - `GitHack By lijiejie <https://github.com/lijiejie/GitHack>`_
 - `GitHack By BugScan <https://github.com/BugScanTeam/GitHack>`_
 - `GitTools <https://github.com/internetwache/GitTools>`_
+- `Zen <https://github.com/s0md3v/Zen>`_
+- `dig github history <https://github.com/dxa4481/truffleHog>`_
+- `gitrob Reconnaissance tool for GitHub organizations <https://github.com/michenriksen/gitrob>`_
+- `git secrets <https://github.com/awslabs/git-secrets>`_
+
+Github监控
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - `Github Monitor <https://github.com/VKSRC/Github-Monitor>`_
+- `Github Dorks <https://github.com/techgaun/github-dorks>`_
+- `GSIL <https://github.com/FeeiCN/GSIL>`_
+- `Hawkeye <https://github.com/0xbug/Hawkeye>`_
+- `gshark <https://github.com/neal1991/gshark>`_
 
 路径及文件扫描
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -45,6 +56,12 @@ Git信息泄漏
 - `whatweb <https://github.com/urbanadventurer/whatweb>`_
 - `Wordpress Finger Print <https://github.com/iniqua/plecost>`_
 - `CMS指纹识别 <https://github.com/n4xh4ck5/CMSsc4n>`_
+
+Waf指纹
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- `identywaf <https://github.com/enablesecurity/identywaf>`_
+- `wafw00f <https://github.com/enablesecurity/wafw00f>`_
+- `WhatWaf <https://github.com/Ekultek/WhatWaf>`_
 
 端口扫描
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -80,13 +97,8 @@ DNS关联
 - `Zoomeye <https://www.zoomeye.org/>`_
 - `fofa <https://fofa.so/>`_
 - `scans <https://scans.io/>`_
+- `Just Metadata <https://github.com/FortyNorthSecurity/Just-Metadata>`_
 - `publicwww - Find Web Pages via Snippet <https://publicwww.com/>`_
-
-Github
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-- `Github Dorks <https://github.com/techgaun/github-dorks>`_
-- `Zen <https://github.com/s0md3v/Zen>`_
-- `dig github history <https://github.com/dxa4481/truffleHog>`_
 
 其他
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -128,6 +140,12 @@ Hacking database
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - `spoofcheck <https://github.com/BishopFox/spoofcheck>`_
 
+网盘搜索
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- `虫部落 <http://magnet.chongbuluo.com/>`_
+- `盘多多 <http://www.panduoduo.net/>`_
+- `Infinite Panc <https://www.panc.cc>`_
+
 综合框架
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - `theHarvester <https://github.com/laramies/theHarvester>`_
@@ -152,7 +170,6 @@ XSS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - `BeEF <https://github.com/beefproject/beef>`_
 - `XSS Reciver <https://github.com/firesunCN/BlueLotus_XSSReceiver>`_
-- `Brute XSS <https://github.com/shawarkhanethicalhacker/BruteXSS>`_
 - `DSXS <https://github.com/stamparm/DSXS>`_
 - `XSStrike <https://github.com/s0md3v/XSStrike>`_
 - `xsssniper <https://github.com/gbrindisi/xsssniper>`_
@@ -205,6 +222,8 @@ XXE
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - `Oracle Database Attacking Tool <https://github.com/quentinhardy/odat>`_
 - `nmap vulners <https://github.com/vulnersCom/nmap-vulners>`_
+- `nmap nse scripts <https://github.com/cldrn/nmap-nse-scripts>`_
+- `Vulnerability Scanning with Nmap <https://github.com/scipag/vulscan>`_
 
 JWT
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -227,6 +246,10 @@ DDoS
 
 持久化
 ----------------------------------------
+
+Windows
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- `WinPwnage <https://github.com/rootm0s/WinPwnage>`_
 
 WebShell连接工具
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -276,10 +299,18 @@ Fuzz
 Web Fuzz
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - `wfuzz <https://github.com/xmendez/wfuzz>`_
+- `SecLists <https://github.com/danielmiessler/SecLists>`_
+- `fuzzdb <https://github.com/fuzzdb-project/fuzzdb>`_
+- `foospidy payloads <https://github.com/foospidy/payloads>`_
 
 Unicode Fuzz
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - `utf16encode <http://www.fileformat.info/info/charset/UTF-16/list.htm>`_
+
+WAF Bypass
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- `abuse ssl bypass waf <https://github.com/LandGrey/abuse-ssl-bypass-waf>`_
+- `wafninja <https://github.com/khalilbijjou/wafninja>`_
 
 防御
 ----------------------------------------
@@ -302,6 +333,8 @@ XSS
 IDS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - `ossec <https://github.com/ossec/ossec-hids>`_
+- `yulong <https://github.com/ysrc/yulong-hids>`_
+- `AgentSmith <https://github.com/DianrongSecurity/AgentSmith-HIDS>`_
 
 threat intelligence
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -355,10 +388,26 @@ IoC
 - `Argus <https://github.com/salesforce/Argus>`_
 - `PcapPlusPlus <https://github.com/seladb/PcapPlusPlus>`_
 
+堡垒机
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- `jumpserver <https://github.com/jumpserver/jumpserver>`_
+- `CrazyEye <https://github.com/triaquae/CrazyEye>`_
+- `GateOne <https://github.com/liftoff/GateOne>`_
+
 蜜罐
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-- `dionaea <https://github.com/DinoTools/dionaea>`_
+- `Dionaea <https://github.com/DinoTools/dionaea>`_
 - `Modern Honey Network  <https://github.com/threatstream/mhn>`_
+- `Cowrie <https://github.com/micheloosterhof/cowrie>`_ SSH/Telnet蜜罐
+- `honeything <https://github.com/omererdem/honeything>`_ IoT蜜罐
+- `ConPot <http://conpot.org/>`_ 工控设施蜜罐
+- `MongoDB HoneyProxy <https://github.com/Plazmaz/MongoDB-HoneyProxy>`_
+- `ElasticHoney <https://github.com/jordan-wright/elastichoney>`_
+- `DCEPT <https://github.com/secureworks/dcept>`_
+- `Canarytokens <https://github.com/thinkst/canarytokens>`_
+- `Honeydrive <http://bruteforcelab.com/honeydrive>`_
+- `T-Pot <https://github.com/dtag-dev-sec/tpotce/>`_
+- `opencanary <https://github.com/p1r06u3/opencanary_web>`_
 
 VPN Install
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -372,6 +421,21 @@ VPN Install
 - `rtcp <https://github.com/knownsec/rtcp>`_
 - `Tunna <https://github.com/SECFORCE/Tunna>`_
 - `reGeorg <https://github.com/sensepost/reGeorg>`_
+
+漏洞管理
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- `SRCMS <https://github.com/martinzhou2015/SRCMS>`_
+
+风控
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- `nebula <https://github.com/threathunterX/nebula>`_
+- `Liudao <https://github.com/ysrc/Liudao>`_
+- `aswan <https://github.com/momosecurity/aswan>`_
+
+SIEM
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- `metron <https://github.com/apache/metron>`_
+- `MozDef <https://github.com/mozilla/MozDef>`_
 
 钓鱼
 ----------------------------------------
@@ -410,6 +474,8 @@ wifi
 - `pyt <https://github.com/python-security/pyt>`_
 - `Semmle QL <https://github.com/Semmle/ql>`_
 - `prvd <https://github.com/fate0/prvd>`_
+- `find sec bugs <https://github.com/find-sec-bugs/find-sec-bugs>`_
+- `trivy <https://github.com/knqyf263/trivy>`_
 
 WebAssembly
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -426,7 +492,7 @@ WebAssembly
 其他
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - `Serverless Toolkit <https://github.com/ropnop/serverless_toolkit>`_
-- `SecLists <https://github.com/danielmiessler/SecLists>`_
 - `Rendering Engine Probe <https://github.com/PortSwigger/hackability>`_
 - `httrack <http://www.httrack.com/>`_
 - `curl <https://curl.haxx.se/>`_
+- `htrace <https://github.com/trimstray/htrace.sh>`_
