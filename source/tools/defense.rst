@@ -7,7 +7,11 @@
 - `LastActivityView <http://www.nirsoft.net/utils/computer_activity_view.html>`_
 - `Regshot <https://sourceforge.net/projects/regshot/>`_
 
-XSS
+终端监控
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- `attack monitor <https://github.com/yarox24/attack_monitor>`_ Endpoint detection & Malware analysis software
+
+XSS防护
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - `js xss <https://github.com/leizongmin/js-xss>`_
 - `DOMPurify <https://github.com/cure53/DOMPurify>`_
@@ -29,9 +33,14 @@ IDS
 - `yulong <https://github.com/ysrc/yulong-hids>`_
 - `AgentSmith <https://github.com/DianrongSecurity/AgentSmith-HIDS>`_
 
-threat intelligence
+威胁情报
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - `threatfeeds <https://threatfeeds.io/>`_
+
+APT
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- `APT Groups and Operations <https://docs.google.com/spreadsheets/d/1H9_xaxQHpWaa4O_Son4Gx0YOIzlcBWMsdvePFX68EKU/pubhtml>`_
+- `APTnotes <https://github.com/kbandla/APTnotes>`_
 
 入侵检查
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -75,7 +84,6 @@ IoC
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - `SfAntiBotPro <http://edr.sangfor.com.cn/tool/SfabAntiBot_X64.7z>`_
 - `volatility <https://github.com/volatilityfoundation/volatility>`_
-- ` <>`_
 
 审计工具
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -91,9 +99,12 @@ IoC
 - `chip <https://github.com/phith0n/chip>`_
 - `php malware finder <https://github.com/nbs-system/php-malware-finder>`_
 - `phpvulhunter <https://github.com/OneSourceCat/phpvulhunter>`_
+- `Sourcetrail <https://github.com/CoatiSoftware/Sourcetrail>`_ free and open-source cross-platform source explorer
 
 Security Advisories
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - `apache httpd security advisories  <https://httpd.apache.org/security/>`_
 - `nginx security advisories <http://nginx.org/en/security_advisories.html>`_
 - `Jetty Security Reports <https://www.eclipse.org/jetty/documentation/current/security-reports.html>`_
+- `Apache Tomcat <https://tomcat.apache.org/security-8.html>`_
+- `OpenSSL <https://www.openssl.org/news/vulnerabilities.html>`_
