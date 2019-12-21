@@ -8,10 +8,11 @@
    team
    sdl
    threat
+   att8ck
    riskcontrol
    reinforce
+   framework
    honeypot
    intrusiondetection
    emergency
    forensic
-   misc
