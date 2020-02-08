@@ -44,6 +44,8 @@
     - ``netsh firewall show config``
     - ``netsh firewall show state``
 - hosts文件
+- DNS缓存
+    - ``Get-CimInstance -Namespace root/StandardCimv2 -ClassName MSFT_DNSClientCache``
 
 密码信息
 ----------------------------------------
@@ -60,6 +62,9 @@
 ----------------------------------------
 - 查看补丁安装情况
     - ``wmic qfe get Caption,Description,HotFixID,InstalledOn``
+- 日志与事件信息
+    - ``wevtutil``
 - 注册表信息
+    - ``reg``
 - 安装的监控软件
 - 安装的杀毒软件
