@@ -16,6 +16,7 @@
 - `the art of subdomain enumeration <https://github.com/appsecco/the-art-of-subdomain-enumeration>`_
 - `sslScrape <https://github.com/cheetz/sslScrape/blob/master/sslScrape.py>`_
 - `aquatone <https://github.com/michenriksen/aquatone>`_ A Tool for Domain Flyovers
+- `teemo <https://github.com/bit4woo/teemo>`_ A Domain Name & Email Address Collection Tool
 
 弱密码爆破
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -34,6 +35,7 @@ Git信息泄漏
 - `gitrob Reconnaissance tool for GitHub organizations <https://github.com/michenriksen/gitrob>`_
 - `git secrets <https://github.com/awslabs/git-secrets>`_
 - `shhgit <https://github.com/eth0izzle/shhgit>`_ Find GitHub secrets in real time
+- `GitHound <https://github.com/tillson/git-hound>`_ GitHound pinpoints exposed API keys on GitHub using pattern matching, commit history searching, and a unique result scoring system. A batch-catching, pattern-matching, patch-attacking secret snatcher. 
 
 Github监控
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -59,6 +59,12 @@
 - 查看进程信息 ``ps aux``
 - 资源占有情况 ``top -c``
 - 查看进程关联文件 ``lsof -c $PID``
+- 完整命令行信息 ``/proc/$PID/cmdline``
+- 进程的命令名 ``/proc/$PID/comm``
+- 进程当前工作目录的符号链接 ``/proc/$PID/cwd``
+- 运行程序的符号链接 ``/proc/$PID/exe``
+- 进程的环境变量 ``/proc/$PID/environ``
+- 进程打开文件的情况 ``/proc/$PID/fd``
 
 服务信息
 ----------------------------------------
@@ -66,6 +72,7 @@
 - 由xinetd管理的服务列表 ``cat /etc/xinetd.conf``
 - nfs服务器的配置 ``cat /etc/exports``
 - 邮件信息 ``/var/log/mailog``
+- ssh配置 ``sshd_config``
 
 计划任务
 ----------------------------------------

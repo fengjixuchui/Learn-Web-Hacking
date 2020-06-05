@@ -15,6 +15,7 @@ Windows
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - `WindowsExploits <https://github.com/abatchy17/WindowsExploits>`_
 - `GTFOBins <https://github.com/GTFOBins/GTFOBins.github.io>`_ Curated list of Unix binaries that can be exploited to bypass system security restrictions
+- `JAWS <https://github.com/411Hall/JAWS>`_ Just Another Windows (Enum) Script
 
 UAC Bypass
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -54,9 +55,14 @@ RAT
 
 C2
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-- `cobalt strike <https://www.cobaltstrike.com>`_
 - `Empire <https://github.com/EmpireProject/Empire>`_
 - `pupy <https://github.com/n1nj4sec/pupy>`_
+
+Cobalt Strike
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- `Cobalt Strike <https://www.cobaltstrike.com>`_
+- `CrossC2 <https://github.com/gloxec/CrossC2>`_ generate CobaltStrike's cross-platform payload
+- `Cobalt Strike Aggressor Scripts <https://github.com/timwhitez/Cobalt-Strike-Aggressor-Scripts>`_
 
 日志清除
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
