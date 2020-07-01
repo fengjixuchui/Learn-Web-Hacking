@@ -63,6 +63,7 @@
 - 防火墙配置
 - DNS配置
 - 路由配置
+- 监听端口
 
 配置分析
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -142,9 +143,13 @@ Windows应急响应
 - 分析开机自启程序
     - ``HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run``
     - ``HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Runonce``
+    - ``HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunServices``
+    - ``HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunServicesOnce``
     - ``HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run``
     - ``HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run``
     - ``HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunOnce``
+    - ``HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunServices``
+    - ``HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunServicesOnce``
     - ``(ProfilePath)\Start Menu\Programs\Startup`` 启动项
     - ``msconfig`` 启动选项卡
     - ``gpedit.msc`` 组策略编辑器
@@ -154,6 +159,18 @@ Windows应急响应
     - ``C:\Windows\tasks\``
     - ``schtasks``
     - ``taskschd.msc``
+    - ``compmgmt.msc``
+- 查看启动服务
+    - ``services.msc``
+
+日志分析
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- 事件查看
+    - ``eventvwr.msc``
+
+其他
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- 查看系统环境变量
 
 参考链接
 ----------------------------------------

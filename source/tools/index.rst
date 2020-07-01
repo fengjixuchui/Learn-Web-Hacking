@@ -1,5 +1,5 @@
 工具与资源
-================================
+========================================
 
 .. toctree::
    :maxdepth: 2
@@ -11,7 +11,9 @@
    socialengineering
    fuzz
    exploit
+   nearsource
    webpersistence
+   intranet
    ospersistence
    defense
    operation
