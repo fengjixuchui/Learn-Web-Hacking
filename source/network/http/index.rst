@@ -6,5 +6,8 @@ HTTP协议簇
    :caption: 内容索引:
 
    http
+   httpver
    https
+   cookie
    webdav
+   ref

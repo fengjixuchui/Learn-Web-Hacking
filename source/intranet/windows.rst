@@ -3,6 +3,7 @@
 
 基本命令
 ----------------------------------------
+- 主机名 ``hostname``
 - 查询所有计算机名称 ``dsquery computer``
 - 查看配置及补丁信息
     - ``systeminfo``
@@ -15,7 +16,9 @@
 - 查看所有环境变量 ``set``
 - 查看计划任务 ``schtasks /QUERY /fo LIST /v``
 - 查看安装驱动 ``DRIVERQUERY``
-- 查看操作系统架构 ``wmic os get osarchitecture``
+- 查看操作系统信息
+    - 架构 ``wmic os get osarchitecture``
+    - 系统名 ``wmic os get caption``
 - 查看逻辑盘 ``wmic logicaldisk get caption``
 - 查看安装的软件信息 ``wmic product get name,version``
 - 查看服务信息
@@ -43,7 +46,7 @@
 ----------------------------------------
 - 查看用户 
     - ``net user``
-    - ``whoami`` / ``whoami /all``
+    - ``whoami`` / ``whoami /priv`` / ``whoami /all``
     - ``wmic useraccount get /ALL /format:csv``
 - 用户特权信息 ``whoami /priv``
 - 查看当前权限 ``net localgroup administrators``
@@ -91,7 +94,7 @@
 
 票据信息
 ----------------------------------------
-- cmdkey
+- ``cmdkey /l``
 - klist
 - msf meterpreter
 
@@ -132,6 +135,7 @@
     - ``wmic qfe get Caption,Description,HotFixID,InstalledOn``
 - 日志与事件信息
     - ``wevtutil``
+    - ``eventvwr``
 - 注册表信息
     - ``reg``
 - 安装的各类 agent 监控软件

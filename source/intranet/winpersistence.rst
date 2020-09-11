@@ -42,9 +42,13 @@ LOLBAS，全称Living Off The Land Binaries and Scripts (and also Libraries)，�
     - 构建应用程序
 - mshta.exe
     - HTML应用
+- msxsl
+    - 处理XSL程序
 - netsh.exe
 - installutil.exe
     - 安装/卸载程序组件
+- IEExec.exe
+    - .NET Framework附带程序
 - powershell.exe
 - psexec.exe
 - reg.exe
@@ -148,6 +152,9 @@ ByPass
 
 自启动
 ----------------------------------------
+
+基于注册表的自启动
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 通过在注册表中写入相应的键值可以实现程序的开机自启动，主要是 ``Run`` 和 ``RunOnce`` ，其中RunOnce和Run区别在于RunOnce的键值只作用一次，执行完毕后会自动删除。
 
 注册表如下：
@@ -177,8 +184,19 @@ ByPass
 - ``HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunServices``
 - ``HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunServices``
 
-用户自启动位置 ``HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\Userinit`` 、 ``HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\Shell`` 。
+用户自启动位置 ``HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\Userinit`` 、 ``HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\Shell`` ，其中 ``Userinit`` 键允许指定用逗号分隔的多个程序。
 
+如果用户启动了屏幕保护程序，也可以通过屏幕保护程序来启动后面，相关注册表键值为：
+
+- ``HKEY_CURRENT_USER\Control Panel\Desktop\ScreenSaveActive``
+- ``HKEY_CURRENT_USER\Control Panel\Desktop\ScreenSaverIsSecure``
+- ``HKEY_CURRENT_USER\Control Panel\Desktop\ScreenSaveTimeOut``
+- ``HKEY_CURRENT_USER\Control Panel\Desktop\SCRNSAVE.EXE``
+
+基于特定目录的自启动
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+自启动目录， ``C:\Users\Username\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`` 目录对特定用户生效， ``C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp`` 对所有用户生效。在NT6以前，两个目录为 ``C:\Documents and Settings\Username\Start Menu\Programs\StartUp`` / ``C:\Documents and Settings\All Users\Start Menu\Programs\StartUp`` 。
+ 
 权限提升
 ----------------------------------------
 权限提升有多重方式，有利用二进制漏洞、逻辑漏洞等技巧。利用二进制漏洞获取权限的方式是利用运行在内核态中的漏洞来执行代码。比如内核、驱动中的UAF或者其他类似的漏洞，以获得较高的权限。
