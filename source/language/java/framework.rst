@@ -6,7 +6,7 @@ Servlet
 
 简介
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Servlet（Server Applet）是Java Servlet的简称，称为小服务程序或服务连接器，是用Java编写的服务器端程序，主要功能在于交互式地浏览和修改数据，生成动态Web内容。
+Servlet(Server Applet)是Java Servlet的简称，称为小服务程序或服务连接器，是用Java编写的服务器端程序，主要功能在于交互式地浏览和修改数据，生成动态Web内容。
 
 狭义的Servlet是指Java语言实现的一个接口，广义的Servlet是指任何实现了这个Servlet接口的类，一般情况下，人们将Servlet理解为后者。Servlet运行于支持Java的应用服务器中。从原理上讲，Servlet可以响应任何类型的请求，但绝大多数情况下Servlet只用来扩展基于HTTP协议的Web服务器。
 
@@ -15,7 +15,7 @@ Servlet（Server Applet）是Java Servlet的简称，称为小服务程序或服
 - 客户端请求该 Servlet
 - 加载 Servlet 类到内存
 - 实例化并调用init()方法初始化该 Servlet
-- service()（根据请求方法不同调用 ``doGet()`` / ``doPost()`` / ... / ``destroy()``
+- service()(根据请求方法不同调用 ``doGet()`` / ``doPost()`` / ... / ``destroy()``
 
 接口
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -85,3 +85,56 @@ Spring在推出之初方案较为繁琐，因此提供了Spring Boot作为自动
 - 如果Controller返回字符串，ViewResolver将字符串转换成相应的视图对象
 - DispatchServlet将视图对象中的数据，输出给服务器
 - 服务器将数据输出给客户端
+
+Shiro
+----------------------------------------
+
+简介
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Apache Shiro是一个功能强大且易于使用的Java安全框架，功能包括身份验证，授权，加密和会话管理。
+
+CVE概览
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- CVE-2020-13933  
+    - Apache Shiro < 1.6.0
+    - 身份验证绕过漏洞
+- CVE-2020-11989
+    - SHIRO-782 
+    - Apache Shiro < 1.5.3
+    - 身份验证绕过漏洞
+- CVE-2020-1957
+    - SHIRO-682
+    - Apache Shiro < 1.5.2
+    - 身份验证绕过漏洞
+- CVE-2019-12422
+    - SHIRO-721
+    - Apache Shiro < 1.4.2
+    - Padding Oracle Attack 远程代码执行漏洞
+- CVE-2016-4437
+    - SHIRO-550
+    - Apache Shiro <= 1.2.4
+    - 反序列化远程代码执行漏洞
+- CVE-2014-0074
+    - SHIRO-460 
+    - Apache Shiro < 1.2.3
+    - 身份验证绕过漏洞
+
+CVE-2020-13933
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Apache Shiro 1.6.0之前的版本，由于Shiro拦截器与requestURI的匹配流程与Web框架的拦截器的匹配流程有差异，攻击者构造一个特殊的http请求，可以绕过Shiro的认证，未授权访问敏感路径。
+
+CVE-2020-11989
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Apache Shiro 1.5.3之前的版本，由于Shiro拦截器与requestURI的匹配流程与Web框架的拦截器的匹配流程有差异，攻击者构造一个特殊的http请求，可以绕过Shiro的认证，未授权访问敏感路径。此漏洞存在两种攻击方式。
+
+CVE-2020-1957
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Apache Shiro 1.5.2之前的版本，由于Shiro拦截器与requestURI的匹配流程与Web框架的拦截器的匹配流程有差异，攻击者构造一个特殊的http请求，可以绕过Shiro的认证，未授权访问敏感路径。
+
+CVE-2019-12422
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Apache Shiro 1.4.2之前的版本默认使用 ``AES/CBC/PKCS5Padding`` 模式加密,开启RememberMe功能的Shiro组件将允许远程攻击者构造序列化数据，通过Padding Oracle Attack进行爆破，即使在秘钥未知的条件下，也可以在目标服务器上执行任意命令。
+
+CVE-2016-4437
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Apache Shiro 1.2.5之前的版本在 ``org.apache.shiro.mgt.AbstractRememberMeManager`` 中存在AES默认秘钥 ``kPH+bIxk5D2deZiIxcaaaA==`` ，开启RememberMe功能的Shiro组件将允许远程攻击者构造序列化数据，在目标服务器上执行任意命令。

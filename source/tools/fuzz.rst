@@ -7,6 +7,19 @@ Web Fuzz
 - `SecLists <https://github.com/danielmiessler/SecLists>`_
 - `fuzzdb <https://github.com/fuzzdb-project/fuzzdb>`_
 - `foospidy payloads <https://github.com/foospidy/payloads>`_
+- `ffuf <https://github.com/ffuf/ffuf>`_ Fast web fuzzer written in Go
+
+XSS Payloads
+----------------------------------------
+- `PORTSWIGGER XSS cheat sheet <https://portswigger.net/web-security/cross-site-scripting/cheat-sheet>`_
+- `Pgaijin66 XSS-Payloads <https://github.com/Pgaijin66/XSS-Payloads>`_
+- `OWASP XSS <https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet>`_
+
+Burp插件
+----------------------------------------
+- `BurpBounty <https://github.com/wagiro/BurpBounty>`_ Scan Check Builder
+- `BurpShiroPassiveScan <https://github.com/pmiaowu/BurpShiroPassiveScan>`_
+- `IntruderPayloads <https://github.com/1N3/IntruderPayloads>`_ A collection of Burpsuite Intruder payloads
 
 字典
 ----------------------------------------
@@ -15,6 +28,7 @@ Web Fuzz
 - `fuzzDicts <https://github.com/TheKingOfDuck/fuzzDicts>`_ Web Pentesting Fuzz 字典
 - `bruteforce lists <https://github.com/random-robbie/bruteforce-lists>`_
 - `CT subdomains <https://github.com/internetwache/CT_subdomains>`_
+- `PentesterSpecialDict <https://github.com/ppbibo/PentesterSpecialDict>`_ 渗透测试人员专用精简化字典
 
 Unicode Fuzz
 ----------------------------------------

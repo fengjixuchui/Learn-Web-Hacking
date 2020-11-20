@@ -20,6 +20,7 @@
 - Linux Kernel Networking: Implementation and Theory
 - Bulletproof SSL and TLS
 - UNIX Network Programming
+- TCP / IP 协议详解
 
 SEO
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -66,6 +67,10 @@ Hacking Programming
 - 黑客秘笈——渗透测试实用指南
 - 黑客攻防技术宝典——web实战篇
 
+WebSite
+--------------------------------
+- https://adsecurity.org/
+
 Blog
 --------------------------------
 - https://www.leavesongs.com/
@@ -105,11 +110,16 @@ Web安全相关CTF题目
 
 Awesome 系列
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- `Awesome-Android-Security <https://github.com/saeidshirazi/awesome-android-security>`_
 - `awesome web security <https://github.com/qazbnm456/awesome-web-security>`_
 - `Awesome Hacking <https://github.com/Hack-with-Github/Awesome-Hacking>`_
 - `Awesome Security <https://github.com/sbilly/awesome-security>`_
 - `awesome sec talks <https://github.com/PaulSec/awesome-sec-talks>`_
 - `Awesome CobaltStrike <https://github.com/zer0yu/Awesome-CobaltStrike>`_
+
+Bug Hunting
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- `HowToHunt <https://github.com/KathanP19/HowToHunt>`_ Tutorials and Things to Do while Hunting Vulnerability
 
 Java
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

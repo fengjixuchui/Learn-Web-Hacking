@@ -1,6 +1,24 @@
 信息收集
 ========================================
 
+Whois
+----------------------------------------
+- `who.is <https://who.is/>`_
+- `万网WHOIS <https://whois.aliyun.com/>`_
+- `腾讯云WHOIS <https://whois.cloud.tencent.com/>`_
+- `站长之家WHOIS <https://whois.chinaz.com/>`_
+
+网站备案
+----------------------------------------
+- `天眼查 <https://www.tianyancha.com/>`_
+- `ICP备案查询 <http://www.beianbeian.com/>`_
+- `爱站备案查询 <https://icp.aizhan.com>`_
+
+CDN查询
+----------------------------------------
+- `多地Ping <https://ping.chinaz.com/>`_
+- `CDN服务商查询 <https://tools.ipip.net/cdn.php>`_
+
 子域爆破
 ----------------------------------------
 - `subDomainsBrute <https://github.com/lijiejie/subDomainsBrute>`_
@@ -17,6 +35,7 @@
 - `sslScrape <https://github.com/cheetz/sslScrape/blob/master/sslScrape.py>`_
 - `aquatone <https://github.com/michenriksen/aquatone>`_ A Tool for Domain Flyovers
 - `teemo <https://github.com/bit4woo/teemo>`_ A Domain Name & Email Address Collection Tool
+- `DNS DB 历史记录 <https://dnsdb.io/zh-cn/>`_
 
 弱密码爆破
 ----------------------------------------
@@ -38,6 +57,7 @@ Git信息泄漏
 - `shhgit <https://github.com/eth0izzle/shhgit>`_ Find GitHub secrets in real time
 - `GitHound <https://github.com/tillson/git-hound>`_ GitHound pinpoints exposed API keys on GitHub using pattern matching, commit history searching, and a unique result scoring system. A batch-catching, pattern-matching, patch-attacking secret snatcher
 - `x patrol <https://github.com/MiSecurity/x-patrol>`_ Github leaked patrol
+- `GitDorker <https://github.com/obheda12/GitDorker>`_ scrape secrets from GitHub through usage of a large repository of dorks
 
 Github监控
 ----------------------------------------
@@ -82,6 +102,7 @@ Waf指纹
 - `zmap <https://github.com/zmap/zmap>`_
 - `masscan <https://github.com/robertdavidgraham/masscan>`_
 - `ShodanHat <https://github.com/HatBashBR/ShodanHat>`_
+- `RustScan <https://github.com/RustScan/RustScan>`_ The Modern Port Scanner
 - DNS ``dnsenum nslookup dig fierce``
 - SNMP ``snmpwalk``
 
@@ -124,6 +145,10 @@ CI信息泄露
 ----------------------------------------
 - `secretz <https://github.com/lc/secretz>`_ minimizing the large attack surface of Travis CI
 
+个人数据画像
+----------------------------------------
+- `GHunt <https://github.com/mxrch/GHunt>`_ Investigate Google Accounts with emails
+
 邮箱收集
 ----------------------------------------
 - `EmailHarvester <https://github.com/maldevel/EmailHarvester>`_
@@ -135,4 +160,3 @@ CI信息泄露
 - `archive <https://archive.org/web/>`_
 - `HTTPLeaks <https://github.com/cure53/HTTPLeaks>`_
 - `htrace <https://github.com/trimstray/htrace.sh>`_
-- `AWSBucketDump <https://github.com/jordanpotti/AWSBucketDump>`_

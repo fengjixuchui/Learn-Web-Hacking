@@ -37,6 +37,11 @@ C2
 - `Invoke Phant0m <https://github.com/hlldz/Invoke-Phant0m>`_ Windows Event Log Killer
 - `EventCleaner <https://github.com/QAX-A-Team/EventCleaner>`_ A tool mainly to erase specified records from Windows event logs, with additional functionalities
 
+伪造
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- `parent PID spoofing <https://github.com/countercept/ppid-spoofing>`_ Scripts for performing and detecting parent PID spoofing
+- `GetSystem <https://github.com/py7hagoras/GetSystem>`_ This is a C# implementation of making a process/executable run as NT AUTHORITY/SYSTEM. This is achieved through parent ID spoofing of almost any SYSTEM process.
+
 综合工具
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - `Nishang <https://github.com/samratashok/nishang>`_ Offensive PowerShell for red team, penetration testing and offensive security
@@ -57,6 +62,7 @@ rootkit
 后门
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - `prism <https://github.com/andreafabrizi/prism>`_ is an user space stealth reverse shell backdoor
+- `icmpsh <https://github.com/inquisb/icmpsh>`_ Simple reverse ICMP shell
 
 综合
 ----------------------------------------
@@ -80,6 +86,11 @@ C2
 - `Empire <https://github.com/EmpireProject/Empire>`_
 - `pupy <https://github.com/n1nj4sec/pupy>`_
 - `Covenant <https://github.com/cobbr/Covenant>`_ is a collaborative .NET C2 framework for red teamers
+
+DNS Shell
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- `DNS Shell <https://github.com/sensepost/DNS-Shell>`_ DNS-Shell is an interactive Shell over DNS channel
+- `Reverse DNS Shell <https://github.com/ahhh/Reverse_DNS_Shell>`_ A python reverse shell that uses DNS as the c2 channel
 
 Cobalt Strike
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

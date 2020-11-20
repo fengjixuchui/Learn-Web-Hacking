@@ -12,6 +12,7 @@
 - `attack monitor <https://github.com/yarox24/attack_monitor>`_ Endpoint detection & Malware analysis software
 - `artillery <https://github.com/BinaryDefense/artillery>`_ The Artillery Project is an open-source blue team tool designed to protect Linux and Windows operating systems through multiple methods.
 - `yurita <https://github.com/paypal/yurita>`_ Anomaly detection framework @ PayPal
+- `crowdsec <https://github.com/crowdsecurity/crowdsec>`_ An open-source, lightweight agent to detect and respond to bad behaviours
 
 XSS防护
 ----------------------------------------
@@ -109,10 +110,6 @@ Security Advisories
 Security Tracker
 ----------------------------------------
 - `Nginx Security Tracker <https://security-tracker.debian.org/tracker/source-package/nginx>`_
-
-风险控制
-----------------------------------------
-- `aswan <https://github.com/momosecurity/aswan>`_ 陌陌风控系统静态规则引擎
 
 匹配工具
 ----------------------------------------
