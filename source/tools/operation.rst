@@ -13,6 +13,8 @@
 - `ngrep <https://github.com/jpr5/ngrep>`_
 - `cisco joy <https://github.com/cisco/joy>`_  A package for capturing and analyzing network flow data and intraflow data, for network research, forensics, and security monitoring.
 - `impacket <https://github.com/SecureAuthCorp/impacket>`_ is a collection of Python classes for working with network protocols
+- `NFStream <https://github.com/nfstream/nfstream>`_ a Flexible Network Data Analysis Framework
+- `BruteShark <https://github.com/odedshimon/BruteShark>`_ Network Analysis Tool
 
 堡垒机
 ----------------------------------------
@@ -59,6 +61,7 @@ VPN Install
 - `EarthWorm <https://github.com/idlefire/ew>`_ 是一款用于开启 SOCKS v5 代理服务的工具，基于标准 C 开发，可提供多平台间的转接通讯，用于复杂网络环境下的数据转发。
 - `Tunna <https://github.com/SECFORCE/Tunna>`_  is a set of tools which will wrap and tunnel any TCP communication over HTTP
 - `mssqlproxy <https://github.com/blackarrowsec/mssqlproxy>`_ is a toolkit aimed to perform lateral movement in restricted environments through a compromised Microsoft SQL Server via socket reuse
+- `nps <https://github.com/ehang-io/nps>`_ a lightweight, high-performance, powerful intranet penetration proxy server, with a powerful web management terminal
 
 代理链
 ----------------------------------------
@@ -77,7 +80,7 @@ VPN Install
 风控
 ----------------------------------------
 - `nebula <https://github.com/threathunterX/nebula>`_
-- `Liudao <https://github.com/ysrc/Liudao>`_
+- `Liudao <https://github.com/ysrc/Liudao>`_ “六道”实时业务风控系统
 - `aswan <https://github.com/momosecurity/aswan>`_ 陌陌风控系统静态规则引擎
 
 SIEM
@@ -93,7 +96,16 @@ SIEM
 系统监控
 ----------------------------------------
 - `netdata <https://github.com/netdata/netdata>`_ Real-time performance monitoring
+- `bcc <https://github.com/iovisor/bcc>`_ Tools for BPF-based Linux IO analysis, networking, monitoring, and more
 
 Windows
 ----------------------------------------
 - `Windows Sysinternals <https://docs.microsoft.com/zh-cn/sysinternals>`_
+
+网络测试
+----------------------------------------
+- `Toxiproxy <https://github.com/Shopify/toxiproxy>`_ A TCP proxy to simulate network and system conditions for chaos and resiliency testing
+
+红队模拟
+----------------------------------------
+- `CALDERA <https://github.com/mitre/caldera>`_ Scalable Automated Adversary Emulation Platform

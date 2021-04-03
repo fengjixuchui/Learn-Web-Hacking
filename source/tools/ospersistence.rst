@@ -4,7 +4,7 @@
 Windows
 ----------------------------------------
 
-凭证获取 
+凭证获取
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - `mimikatz <https://github.com/gentilkiwi/mimikatz>`_
 - `RdpThief <https://github.com/0x09AL/RdpThief>`_ Extracting Clear Text Passwords from mstsc.exe using API Hooking
@@ -29,6 +29,7 @@ UAC Bypass
 
 C2
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- `SharpSploit <https://github.com/cobbr/SharpSploit>`_ .NET post-exploitation library written in C#
 - `Koadic <https://github.com/zerosum0x0/koadic>`_ is a Windows post-exploitation rootkit
 
 隐藏
@@ -37,10 +38,23 @@ C2
 - `Invoke Phant0m <https://github.com/hlldz/Invoke-Phant0m>`_ Windows Event Log Killer
 - `EventCleaner <https://github.com/QAX-A-Team/EventCleaner>`_ A tool mainly to erase specified records from Windows event logs, with additional functionalities
 
+DLL注入
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- `sRDI <https://github.com/monoxgas/sRDI>`_ Shellcode Reflective DLL Injection
+
+rootkit
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- `r77-rootkit <https://github.com/bytecode77/r77-rootkit>`_ Ring 3 rootkit with single file installer and fileless persistence that hides processes, files, network connections, etc
+
 伪造
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - `parent PID spoofing <https://github.com/countercept/ppid-spoofing>`_ Scripts for performing and detecting parent PID spoofing
 - `GetSystem <https://github.com/py7hagoras/GetSystem>`_ This is a C# implementation of making a process/executable run as NT AUTHORITY/SYSTEM. This is achieved through parent ID spoofing of almost any SYSTEM process.
+
+MiTM
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- `Seth <https://github.com/SySS-Research/Seth>`_ Perform a MitM attack and extract clear text credentials from RDP connections
+- `pyrdp <https://github.com/GoSecure/pyrdp>`_ RDP man-in-the-middle (mitm) and library for Python with the ability to watch connections live or after the fact
 
 综合工具
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -58,6 +72,7 @@ Linux
 rootkit
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - `rootkit <https://github.com/nurupo/rootkit>`_
+- `Diamorphine <https://github.com/m0nad/Diamorphine>`_ LKM rootkit for Linux Kernels 2.6.x/3.x/4.x/5.x (x86/x86_64 and ARM64) 
 
 后门
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -72,6 +87,7 @@ rootkit
 - `sshLooterC <https://github.com/mthbernardes/sshLooterC>`_ program to steal passwords from ssh
 - `keychaindump <https://github.com/juuso/keychaindump>`_ A proof-of-concept tool for reading OS X keychain passwords
 - `LaZagne <https://github.com/AlessandroZ/LaZagne>`_ Credentials recovery project
+- `SecretScanner <https://github.com/deepfence/SecretScanner>`_ Find secrets and passwords in container images and file systems
 
 权限提升
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -86,6 +102,7 @@ C2
 - `Empire <https://github.com/EmpireProject/Empire>`_
 - `pupy <https://github.com/n1nj4sec/pupy>`_
 - `Covenant <https://github.com/cobbr/Covenant>`_ is a collaborative .NET C2 framework for red teamers
+- `Cooolis-ms <https://github.com/Rvn0xsy/Cooolis-ms>`_ 包含了Metasploit Payload Loader、Cobalt Strike External C2 Loader、Reflective DLL injection的代码执行工具
 
 DNS Shell
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

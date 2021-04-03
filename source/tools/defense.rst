@@ -6,6 +6,7 @@
 - `Sysmon <https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon>`_
 - `LastActivityView <http://www.nirsoft.net/utils/computer_activity_view.html>`_
 - `Regshot <https://sourceforge.net/projects/regshot/>`_
+- `teler <https://github.com/kitabisa/teler>`_ Real-time HTTP Intrusion Detection
 
 终端监控
 ----------------------------------------
@@ -28,7 +29,7 @@ XSS防护
 
 安全检查
 ----------------------------------------
-- `lynis <https://github.com/CISOfy/lynis>`_
+- `lynis <https://github.com/CISOfy/lynis>`_ Security auditing tool for Linux, macOS, and UNIX-based systems
 - `linux malware detect <https://github.com/rfxn/linux-malware-detect>`_
 
 IDS
@@ -36,6 +37,7 @@ IDS
 - `ossec <https://github.com/ossec/ossec-hids>`_
 - `yulong <https://github.com/ysrc/yulong-hids>`_
 - `AgentSmith <https://github.com/DianrongSecurity/AgentSmith-HIDS>`_
+- `ByteDance HIDS  <https://github.com/bytedance/ByteDance-HIDS>`_ Cloud-Native Host-Based Intrusion Detection
 
 SIEM
 ----------------------------------------
@@ -50,6 +52,7 @@ APT
 ----------------------------------------
 - `APT Groups and Operations <https://docs.google.com/spreadsheets/d/1H9_xaxQHpWaa4O_Son4Gx0YOIzlcBWMsdvePFX68EKU/pubhtml>`_
 - `APTnotes <https://github.com/kbandla/APTnotes>`_
+- `APT Hunter <https://github.com/ahmedkhlief/APT-Hunter>`_ Threat Hunting tool for windows event logs which made by purple team mindset to provide detect APT movements hidden in the sea of windows event logs to decrease the time to uncover suspicious activity
 
 入侵检查
 ----------------------------------------
@@ -115,3 +118,7 @@ Security Tracker
 ----------------------------------------
 - `yara <https://github.com/VirusTotal/yara>`_ The pattern matching swiss knife
 - `capa <https://github.com/fireeye/capa>`_ The FLARE team's open-source tool to identify capabilities in executable files.
+
+DoS防护
+----------------------------------------
+- `Gatekeeper <https://github.com/AltraMayor/gatekeeper>`_` open-source DDoS protection system

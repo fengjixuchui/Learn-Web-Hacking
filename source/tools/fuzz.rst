@@ -9,6 +9,11 @@ Web Fuzz
 - `foospidy payloads <https://github.com/foospidy/payloads>`_
 - `ffuf <https://github.com/ffuf/ffuf>`_ Fast web fuzzer written in Go
 
+扫描器
+----------------------------------------
+- `Nuclei <https://github.com/projectdiscovery/nuclei>`_ a fast tool for configurable targeted vulnerability scanning based on templates offering massive extensibility and ease of use
+- `xray <https://github.com/chaitin/xray>`_ 安全评估工具，支持常见 web 安全问题扫描和自定义 poc
+
 XSS Payloads
 ----------------------------------------
 - `PORTSWIGGER XSS cheat sheet <https://portswigger.net/web-security/cross-site-scripting/cheat-sheet>`_
@@ -24,7 +29,7 @@ Burp插件
 字典
 ----------------------------------------
 - `Blasting dictionary <https://github.com/rootphantomer/Blasting_dictionary>`_
-- `pydictor <https://github.com/LandGrey/pydictor>`_  A powerful and useful hacker dictionary builder for a brute-force attack
+- `pydictor <https://github.com/LandGrey/pydictor>`_ A powerful and useful hacker dictionary builder for a brute-force attack
 - `fuzzDicts <https://github.com/TheKingOfDuck/fuzzDicts>`_ Web Pentesting Fuzz 字典
 - `bruteforce lists <https://github.com/random-robbie/bruteforce-lists>`_
 - `CT subdomains <https://github.com/internetwache/CT_subdomains>`_

@@ -18,7 +18,11 @@ Docker是目前最具代表性的容器平台之一，具有持续部署与测�
 
 基本概念
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Docker有三个基本概念，镜像（Image）、容器（Container）、仓库（Repository），镜像是一个只读的模版，容器是从镜像创建的运行实例，仓库（Repository） 是集中存放镜像文件的场所。
+Docker有三个基本概念，镜像（Image）、容器（Container）、仓库（Repository）。镜像是一个只读的模版，由一组文件系统通过Union FS技术组成。
+
+镜像是静态的定义，容器是从镜像创建的运行实例。容器的本质是进程，拥有自己独立的命名空间。
+
+仓库（Repository） 是集中存放镜像文件的场所，用于存储、分发镜像。
 
 容器可以被启动、开始、停止、删除，每个容器都是相互隔离的，可以把容器看做是一个简易版的 Linux 环境（包括root用户权限、进程空间、用户空间和网络空间等）和运行在其中的应用程序。
 
@@ -125,8 +129,13 @@ Docker使用Seccomp来限制容器对宿主机内核发起的系统调用。
 配置不当
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - 开启privileged
-    - 挂载宿主机目录
-- ``--cap-add=SYS_ADMIN``
+- 挂载宿主机敏感目录
+- 配置cap不当
+    - ``--cap-add=SYS_ADMIN``
+- 绕过namespace
+    - ``--net=host``
+    - ``--pid=host``
+    - ``--ipc=host``
 
 拒绝服务
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -143,6 +152,15 @@ Docker使用Seccomp来限制容器对宿主机内核发起的系统调用。
 攻击 Docker 守护进程
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 虽然 Docker 容器具有很强的安全保护措施，但是 Docker 守护进程本身并没有被完善的保护。Docker 守护进程本身默认由 root 用户运行，并且该进程本身并没有使用 Seccomp 或者 AppArmor 等安全模块进行保护。这使得一旦攻击者成功找到漏洞控制 Docker 守护进程进行任意文件写或者代码执行，就可以顺利获得宿主机的 root 权限而不会受到各种安全机制的阻碍。值得一提的是，默认情况下 Docker 不会开启 User Namespace 隔离，这也意味着 Docker 内部的 root 与宿主机 root 对文件的读写权限相同。这导致一旦容器内部 root 进程获取读写宿主机文件的机会，文件权限将不会成为另一个问题。这一点在 CVE-2019-5636 利用中有所体现。
+
+其他CVE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- CVE-2014-5277
+- CVE-2014-6408
+- CVE-2014-9357
+- CVE-2014-9358
+- CVE-2015-3627
+- CVE-2015-3630
 
 安全加固
 ----------------------------------------
@@ -203,7 +221,7 @@ Docker外
 - `Docker容器安全性分析 <https://www.freebuf.com/articles/system/221319.html>`_
 - `AppArmor security profiles for Docker <https://docs.docker.com/engine/security/apparmor/>`_
 - `Docker Bench for Security <https://github.com/docker/docker-bench-security>`_
-- ` Docker安全性与攻击面分析 <https://mp.weixin.qq.com/s/d9D3z13uCOJoJzplpu3WJQ>`_
+- `Docker安全性与攻击面分析 <https://mp.weixin.qq.com/s/d9D3z13uCOJoJzplpu3WJQ>`_
 -  Pfleeger C P , Pfleeger S L , Theofanos M F . A methodology for penetration testing[J]. Computers & Security, 1989, 8(7):613-620.
 
 .. |benchsec| image:: ../images/docker-sec-bench.png
