@@ -96,6 +96,10 @@ WebShell查杀
 - `AttackDetection <https://github.com/ptresearch/AttackDetection>`_ Suricata PT Open Ruleset
 - `DailyIOC <https://github.com/StrangerealIntel/DailyIOC>`_ IOC from articles, tweets for archives
 
+威胁检测
+----------------------------------------
+- `ARTIF <https://github.com/CRED-CLUB/ARTIF>`_ An advanced real time threat intelligence framework to identify threats and malicious web traffic on the basis of IP reputation and historical data
+
 内存取证
 ----------------------------------------
 - `SfAntiBotPro <http://edr.sangfor.com.cn/tool/SfabAntiBot_X64.7z>`_
@@ -122,3 +126,7 @@ Security Tracker
 DoS防护
 ----------------------------------------
 - `Gatekeeper <https://github.com/AltraMayor/gatekeeper>`_` open-source DDoS protection system
+
+对手模拟
+----------------------------------------
+- `sliver <https://github.com/BishopFox/sliver>`_ Adversary Simulation Framework
