@@ -12,6 +12,11 @@
 - `ADRecon <https://github.com/sense-of-security/ADRecon>`_ Active Directory Recon
 - `Creds <https://github.com/S3cur3Th1sSh1t/Creds>`_ Some usefull Scripts and Executables for Pentest & Forensics
 - `Lithnet Password Protection for Active Directory <https://github.com/lithnet/ad-password-protection>`_ Active Directory password filter featuring breached password checking and custom complexity rules
+- `ASREPRoast <https://github.com/HarmJ0y/ASREPRoast>`_ Project that retrieves crackable hashes from KRB5 AS-REP responses for users without kerberoast preauthentication enabled.
+
+LDAP
+----------------------------------------
+- `SharpHound3 <https://github.com/BloodHoundAD/SharpHound3>`_ Data Collector for the BloodHound Project
 
 容器
 ----------------------------------------
@@ -39,6 +44,7 @@ PowerShell
 
 内网信息收集
 ----------------------------------------
+- `nbtscan <https://github.com/scallywag/nbtscan>`_ NetBIOS scanning tool
 - `SharpShares <https://github.com/djhohnstein/SharpShares>`_ Quick and dirty binary to list network share information from all machines in the current domain and if they're readable
 - `WinShareEnum <https://github.com/nccgroup/WinShareEnum>`_ Windows Share Enumerator
 - `HackBrowserData <https://github.com/moonD4rk/HackBrowserData>`_ 全平台的浏览器数据导出工具
@@ -47,6 +53,7 @@ Kerberos
 ----------------------------------------
 - `Rubeus <https://github.com/GhostPack/Rubeus>`_
 - `kerbrute <https://github.com/ropnop/kerbrute>`_ A tool to perform Kerberos pre-auth bruteforcing
+- `kerberoast <https://github.com/nidem/kerberoast>`_ A series of tools for attacking MS Kerberos implementations
 
 自动化审计
 ----------------------------------------

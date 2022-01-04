@@ -154,9 +154,18 @@ Kerberos
 
 认证
 ----------------------------------------
+- 单点登录 (Single Sign-On, SSO)
 - 双因素认证 (Two-Factor Authentication, 2FA)
 - 多因素认证 (Multi-Factor Authentication, MFA)
 - 一次性密码 (One-Time Password, OTP)
+
+Kerbose
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- 认证服务器 (Authentication Server, AS)
+- 密钥分发中心 (Key Distribution Center, KDC)
+- 票据授权票据，票据的票据 (Ticket Granting Ticket, TGT)
+- 票据授权服务器 (Ticket Granting Server, TGS)
+- 特定服务提供端 (Service Server, SS)
 
 可信计算
 ----------------------------------------
@@ -164,14 +173,33 @@ Kerberos
 
 云
 ----------------------------------------
+
+计算
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - 弹性云计算 (Elastic Compute Cloud, EC2)
+- 阿里云弹性云计算 (Elastic Compute Service, ECS)
+- 云服务器 (Cloud Virtual Machine, CVM)
+
+存储
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - 简单存储服务 (Simple Storage Service, S3)
-- 元数据服务 (Instance Metadata Service, IMDS)
-- 持续集成 (Continuous Integration, CI)
-- 持续交付 (Continuous Deployment, CD)
+- 对象存储 (Cloud Object Storage, COS) 
+
+XaaS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - 函数即服务 (Function as a Service, FaaS)
 - 容器即服务 (Container as a Service, CaaS)
 - 软件即服务 (Software as a Service, SaaS)
 - 平台即服务 (Platform as a Service, PaaS)
 - 基础设施即服务 (Insfrastructure as a Service, IaaS)
+
+特定平台
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- OCI (Oracle Cloud Infrastructure)
+
+其他服务
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- 元数据服务 (Instance Metadata Service, IMDS)
+- 持续集成 (Continuous Integration, CI)
+- 持续交付 (Continuous Deployment, CD)
 - 边缘计算机器 (Edge Computing Machine, ECM)
